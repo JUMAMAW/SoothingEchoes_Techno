@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+}
+
+.banner{
+    background-color: #ff0000;
+    background-image: url(resortBackground2.jpg);
+    background-size: cover; 
+    background-position: center; 
+    height: 1000px;
+}
+
+.logo{
+    width: 350px; 
+    height: auto; 
+}
+
+.navigationBar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigationBar ul li{
+    font-family: Arial, sans-serif;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position:relative;
+
+}
+
+.navigationBar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navigationBar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navigationBar ul li:hover::after{
+    width: 100%;
+}
+
+.welcome{
+    font-family: Arial, sans-serif;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.welcome h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.welcome p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span{
+    width: 100%;
+}
+
+button:hover{
+    border: none;
+}
+
+.iconFB{
+    position:absolute;
+    top: 600px;
+    right: 5px;
+    width: 35px; 
+    height: auto; 
+    float: left;
+    margin-right: 30px
+}
+
+.iconIG{
+    position:absolute;
+    top: 600px;
+    right: 60px;
+    width: 40px; 
+    height: auto; 
+    float: left;
+    margin-right: 30px
+}
+
+.iconTT{
+    position:absolute;
+    top: 600px;
+    right: 120px;
+    width: 40px; 
+    height: auto; 
+    float: left;
+    margin-right: 30px
+}
